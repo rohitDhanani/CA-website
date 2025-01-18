@@ -6,7 +6,7 @@ import Menu from './Menu';
 
 
 
-const LayoutComp = ({ title, data, width = "64" }) => {
+const LayoutComp = ({ title, data, }) => {
     return (
         <div className="w-fit p-4 flex gap-8">
             <div className={`space-y-3 w-64`}>
@@ -20,17 +20,17 @@ const LayoutComp = ({ title, data, width = "64" }) => {
     )
 }
 
-const NavLinks = ({ navTitle, comp: Comp, data, innerTitle, width, left = "1/2" }) => {
+const NavLinks = ({ navTitle, comp: Comp, data, innerTitle }) => {
     return (<>
         <div className='group relative cursor-pointer' >{navTitle}
             <span className="absolute -bottom-2 -left-2 -right-2 h-1 origin-center scale-x-0 group-hover:scale-x-100 rounded-full bg-white transition-transform duration-300 ease-out"
             />
             <div className='absolute scale-x-0 group-hover:scale-x-100 bg-primary h-fit w-fit top-12 transition-transform duration-300 ease-in-out -translate-x-28 rounded-md'>
                 <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-                <div className={`absolute left-${left} top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-primary `} />
+                <div className={`absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-primary `} />
                 <div className=' flex flex-col gap-4 flex-wrap p-2'>
 
-                    <Comp title={innerTitle} data={data} width={width} />
+                    <Comp title={innerTitle} data={data} />
 
 
 
@@ -53,7 +53,7 @@ const Nav = () => {
                 <NavLinks navTitle={"Start Business"} innerTitle={"BUSINESS REGISTRATIONS"} comp={LayoutComp} data={BUSINESS_REGISTRATIONS} />
                 <NavLinks navTitle={"NGO Registrations"} innerTitle={"NGO REGISTRATIONS"} comp={LayoutComp} data={NGO_REGISTRATIONS} />
                 <NavLinks navTitle={"Trademark"} innerTitle={"TRADEMARK REGISTRATIONS"} comp={LayoutComp} data={TRADEMARK_REGISTRATIONS} />
-                <NavLinks navTitle={"Audit & Tax"} innerTitle={"AUDIT AND TAX MANAGEMENT"} comp={LayoutComp} data={AUDIT_AND_TAX_MANAGEMENT} width={"64"} left='1/2' />
+                <NavLinks navTitle={"Audit & Tax"} innerTitle={"AUDIT AND TAX MANAGEMENT"} comp={LayoutComp} data={AUDIT_AND_TAX_MANAGEMENT} />
 
             </div>
             <div className='flex justify-end gap-4 sm:hidden' >

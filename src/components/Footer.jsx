@@ -20,8 +20,8 @@ const Footer = () => {
       <div className='bg-white flex items-center justify-between flex-wrap'>
         <p>Copyright © 2025 Bardai And Associates. All Rights Reserved</p>
         <div className='flex gap-4'>
-          <NavLink to={""} className="hover:text-blue-500"><FaLinkedin/></NavLink>
-          <NavLink to={""} className="hover:text-pink-800"><RiInstagramFill/></NavLink>
+          <NavLink target='_blank' to={"https://www.linkedin.com/in/ca-alnoor-bardai-988758151/"} className="hover:text-blue-500"><FaLinkedin/></NavLink>
+          <NavLink target='_blank' to={"https://www.instagram.com/ca_alnoor_bardai/?igsh=MWh1YWMyYzgxZHhpbA%3D%3D#"} className="hover:text-pink-800"><RiInstagramFill/></NavLink>
           <NavLink to={""} className="hover:text-blue-800"><FaSquareFacebook/></NavLink>
         </div>
       </div>

@@ -21,9 +21,9 @@ export const ContactUs = () => {
                 <h1 className='text-4xl font-semibold text-center px-2 py-4 text-[#1E3A8A]'>Contact Us</h1>
             </div>
             <div  className='flex items-center justify-center gap-16 px-2 py-5 flex-wrap'>
-                <Card icon={PiPhoneCallFill} title={'Call'} description={PERSONAL_INFO.phone} height='56' width='64' />
-                <Card icon={MdMarkEmailRead} title={'Email'} description={PERSONAL_INFO.email} height='56' width='64' />
-                <Card icon={FaMapMarkerAlt} title={'Visit'} description={PERSONAL_INFO.address} height='56' width='64' />
+                <Card icon={PiPhoneCallFill} title={'Call'} description={PERSONAL_INFO.phone} height='48' width='64' />
+                <Card icon={MdMarkEmailRead} title={'Email'} description={PERSONAL_INFO.email} height='48' width='64' />
+                <Card icon={FaMapMarkerAlt} title={'Visit'} description={PERSONAL_INFO.address} height='48' width='64' />
             </div>
             <div className='flex flex-col md:flex-row gap-8 p-4'>
                 <div className='w-full md:w-1/2 h-64 md:h-auto shadow'>

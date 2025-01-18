@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaWhatsapp } from "react-icons/fa";
 import { AUDIT_AND_TAX_MANAGEMENT, BUSINESS_REGISTRATIONS, NGO_REGISTRATIONS, TRADEMARK_REGISTRATIONS } from '../constants';
 import Menu from './Menu';
 
@@ -61,12 +61,24 @@ const Nav = () => {
                 {<div className={`absolute top-12 right-0 bg-primary -6 w-screen min-h-screen max-h-screen overflow-y-auto flex flex-col  items-center text-xl 
     transition-transform duration-500 ease-in-out transform ${showMenu ? "translate-x-0" : "translate-x-full"
                     }`}>
-                    <div className='py-12 min-h-screen max-h-screen overflow-y-auto'>
+                    <div className='hide-scrollbar py-12 min-h-screen max-h-screen overflow-y-auto flex flex-col justify-between'>
 
-                        <Menu menuName={"Start Business"} menuData={BUSINESS_REGISTRATIONS} setShowMenu={setShowMenu} />
-                        <Menu menuName={"NGO Registrations"} menuData={NGO_REGISTRATIONS} setShowMenu={setShowMenu} />
-                        <Menu menuName={"Trademark"} menuData={TRADEMARK_REGISTRATIONS} setShowMenu={setShowMenu} />
-                        <Menu menuName={"Audit & Tax"} menuData={AUDIT_AND_TAX_MANAGEMENT} setShowMenu={setShowMenu} />
+                        <div>
+                            <Menu menuName={"Start Business"} menuData={BUSINESS_REGISTRATIONS} setShowMenu={setShowMenu} />
+                            <Menu menuName={"NGO Registrations"} menuData={NGO_REGISTRATIONS} setShowMenu={setShowMenu} />
+                            <Menu menuName={"Trademark"} menuData={TRADEMARK_REGISTRATIONS} setShowMenu={setShowMenu} />
+                            <Menu menuName={"Audit & Tax"} menuData={AUDIT_AND_TAX_MANAGEMENT} setShowMenu={setShowMenu} />
+
+                        </div>
+                        <div>
+
+                            <NavLink target="_blank" to="https://wa.me/919904236784?text=Hello" className=' align-bottom flex items-center justify-center gap-1 border rounded-md px-1 py-2 cursor-pointer bg-green-500 transition-all duration-300 ease-out mb-7'>
+                                <span className="order-2 hover:order-1">91-9904236784</span>
+                                <span className=' text-lg order-1 hover:order-2'>
+                                    <FaWhatsapp />
+                                </span>
+                            </NavLink>
+                        </div>
                     </div>
 
                 </div>}

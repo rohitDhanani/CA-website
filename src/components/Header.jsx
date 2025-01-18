@@ -13,7 +13,7 @@ const Header = () => {
       <Nav />
       <div className='hidden md:flex items-center justify-center gap-1 border rounded-md px-3 py-2 cursor-pointer hover:bg-green-500 transition-all duration-300 ease-out'>
         <span className="order-2 hover:order-1">91-{PERSONAL_INFO.phone}</span>
-        <NavLink className=' text-lg order-1 hover:order-2' to={`https://wa.me/91${PERSONAL_INFO.phone}?text=Hello`} target="_blank" rel="noopener noreferrer">
+        <NavLink className=' text-lg order-1 hover:order-2' target="_blank" to={"https://wa.me/9904236784?text=Hello"}  rel="noopener noreferrer">
           <FaWhatsapp />
         </NavLink>
       </div>

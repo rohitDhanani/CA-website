@@ -24,7 +24,7 @@ const Menu = ({ menuName, menuData,setShowMenu }) => {
         style={{ maxHeight: showMenuData ? '500px' : '0px' }}
     >
             <div className='mb-12 py-4'>
-                {menuData.map((item) => <NavLink to="/contact" onClick={() => {
+                {menuData.map((item) => <NavLink key={item.title} to="/contact" onClick={() => {
                     
                     setShowMenuData(!showMenuData)
                     setShowMenu(false)

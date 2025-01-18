@@ -8,7 +8,7 @@ const BusinessRegistrations = () => {
             <div className='flex gap-6 flex-wrap items-center justify-center'>
             {/* <div className='grid grid-cols-4 gap-4'> */}
                 {BUSINESS_REGISTRATIONS.map(({ icon, title, description }) => {
-                    return <Card icon={icon} title={title} description={description} />
+                    return <Card key={title} icon={icon} title={title} description={description} />
                 })}
             </div>
 

@@ -8,7 +8,7 @@ const TradeMark = () => {
             <h1 className='text-4xl text-center m-2 p-2 text-[#1E3A8A]'>Trademark Registrations</h1>
             <div className='flex gap-6 flex-wrap items-center justify-center'>
                 {TRADEMARK_REGISTRATIONS.map(({ icon, title, description, bg }) => {
-                    return <Card icon={icon} title={title} description={description} bg={bg}/>
+                    return <Card key={title} icon={icon} title={title} description={description} bg={bg}/>
                 })}
             </div>
 

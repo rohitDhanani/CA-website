@@ -8,7 +8,7 @@ const AboutSec = () => {
         <p className='tracking-wider leading-loose px-8 py-1 text-[#1F2937]'>{ABOUT_TEXT}</p>
         <p className='tracking-wider leading-loose px-8 py-1 text-[#1F2937]'>{ABOUT_TEXT2}</p>
         <div className='bg-button hover:bg-buttonHover flex flex-col justify-center items-center text-white border rounded p-1 px-2 mt-5'>
-        <NavLink to="/about">Read More</NavLink>
+        <NavLink to="/contact">Read More</NavLink>
         </div>
 
     </div>

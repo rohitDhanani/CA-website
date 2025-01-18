@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
 
 
-      <div className='bg-white flex items-center justify-between flex-wrap'>
+      <div className='bg-white flex items-center justify-between flex-wrap px-4 py-1'>
         <p>Copyright © 2025 Bardai And Associates. All Rights Reserved</p>
         <div className='flex gap-4'>
           <NavLink target='_blank' to={"https://www.linkedin.com/in/ca-alnoor-bardai-988758151/"} className="hover:text-blue-500"><FaLinkedin/></NavLink>

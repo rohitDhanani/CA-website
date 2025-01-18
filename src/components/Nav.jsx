@@ -9,7 +9,7 @@ import Menu from './Menu';
 const LayoutComp = ({ title, data, width = "64" }) => {
     return (
         <div className="w-fit p-4 flex gap-8">
-            <div className={`space-y-3 w-${width}`}>
+            <div className={`space-y-3 w-64`}>
                 <h3 className="font-semibold">{title}</h3>
 
                 {data.map((item, index) => <NavLink key={index} to="/contact" className="block text-sm hover:underline">{item.title}</NavLink>)}

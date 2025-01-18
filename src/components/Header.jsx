@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
 import Nav from './Nav'
-import { FaInstagram, FaWhatsapp } from "react-icons/fa"
+import { FaWhatsapp } from "react-icons/fa"
 import { NavLink } from 'react-router-dom'
 import { PERSONAL_INFO } from '../constants'
 
